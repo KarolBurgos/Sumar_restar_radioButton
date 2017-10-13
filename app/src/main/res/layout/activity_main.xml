@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.sistemas.radiogroup.MainActivity">
+
+    <LinearLayout
+        android:layout_width="231dp"
+        android:layout_height="107dp"
+        android:layout_weight="0.24"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Operaciones Matematicas"
+            android:textSize="18sp"
+            android:layout_weight="0.34" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el primer valor"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el segundo valor"
+            android:inputType="numberSigned"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="83dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/grupo1"
+        android:layout_width="102dp"
+        android:layout_height="103dp"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="126dp">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sumar" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Restar" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/operar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="operar"
+        android:text="Operar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="292dp" />
+</LinearLayout>
